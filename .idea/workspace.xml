@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a15f516-ecab-401e-b93a-a15f9cfb8bb7" name="Changes" comment="Made the first function for get satellites with the needed inputs. Also add the requests package.">
+    <list default="true" id="9a15f516-ecab-401e-b93a-a15f9cfb8bb7" name="Changes" comment="Add comment to explain what the function does.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Satellite_API_Call.py" beforeDir="false" afterPath="$PROJECT_DIR$/Satellite_API_Call.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example.py" beforeDir="false" afterPath="$PROJECT_DIR$/example.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +42,7 @@
   "keyToString": {
     "Python.Main.executor": "Run",
     "Python.Satellite_API_Call.executor": "Run",
+    "Python.example.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
@@ -71,7 +72,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724584368296</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Established communication with the API. Also made a file to test it.">
+      <option name="closed" value="true" />
+      <created>1724585648297</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724585648297</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add comment to explain what the function does.">
+      <option name="closed" value="true" />
+      <created>1724585792411</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724585792411</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,6 +104,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Made the first function for get satellites with the needed inputs. Also add the requests package." />
-    <option name="LAST_COMMIT_MESSAGE" value="Made the first function for get satellites with the needed inputs. Also add the requests package." />
+    <MESSAGE value="Established communication with the API. Also made a file to test it." />
+    <MESSAGE value="Add comment to explain what the function does." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add comment to explain what the function does." />
   </component>
 </project>
