@@ -3,6 +3,7 @@ from City_Coordinates import get_city_coordinates
 from City_Elevation import get_city_elevation
 from Satellite_API_Call import get_satellites_info, get_satellites_above
 from Submit import get_user_input
+from extract_satellite_info import extract_satellite_info
 
 api_key = 'WAZM2J-MJM3EL-MDVLM4-5BQS'
 id = 25544  # ISS NORAD ID
@@ -23,4 +24,5 @@ city, country, angle = get_user_input()
 #print(satellites)
 #print(city_coordinates)
 #print(city_elevation)
-print(f"City: {city}\nCountry: {country}\nAngle: {angle}°")
+#print(f"City: {city}\nCountry: {country}\nAngle: {angle}°")
+#print(extract_satellite_info(satellites))
