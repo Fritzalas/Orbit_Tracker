@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a15f516-ecab-401e-b93a-a15f9cfb8bb7" name="Changes" comment="Made a submission window more abstract, so it  can be used in the main method.">
+    <list default="true" id="9a15f516-ecab-401e-b93a-a15f9cfb8bb7" name="Changes" comment="Deserialization of the JSON file from the satellites API.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example.py" beforeDir="false" afterPath="$PROJECT_DIR$/example.py" afterDir="false" />
     </list>
@@ -50,6 +50,7 @@
     "Python.Main.executor": "Run",
     "Python.Satellite_API_Call.executor": "Run",
     "Python.Submit.executor": "Run",
+    "Python.display_satellites.executor": "Run",
     "Python.example.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -136,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724593201392</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Deserialization of the JSON file from the satellites API.">
+      <option name="closed" value="true" />
+      <created>1724595728024</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1724595728024</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,6 +168,7 @@
     <MESSAGE value="Made a new API call so with the given city coordinates we take the city elevation in meters." />
     <MESSAGE value="Made a submission window, so the user gives there his inputs." />
     <MESSAGE value="Made a submission window more abstract, so it  can be used in the main method." />
-    <option name="LAST_COMMIT_MESSAGE" value="Made a submission window more abstract, so it  can be used in the main method." />
+    <MESSAGE value="Deserialization of the JSON file from the satellites API." />
+    <option name="LAST_COMMIT_MESSAGE" value="Deserialization of the JSON file from the satellites API." />
   </component>
 </project>
