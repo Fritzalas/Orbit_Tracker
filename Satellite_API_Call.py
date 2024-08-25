@@ -1,6 +1,6 @@
 import requests
 
-def get_satellites_above(norad_id, observer_lat, observer_lng, seconds, api_key):
+def get_satellites_above(id, observer_lat, observer_lng, observer_alt ,seconds, api_key):
     """
         Fetches future positions of a satellite along with azimuth and elevation with respect to the observer.
 
@@ -15,3 +15,20 @@ def get_satellites_above(norad_id, observer_lat, observer_lng, seconds, api_key)
         Returns:
         - list: A list of satellite positions and angles, or an error message.
         """
+
+    # Define the API endpoint
+    url = f'https://api.n2yo.com/rest/v1/satellite/positions/{id}/{observer_lat}/{observer_lng}/{observer_alt}/{seconds}/&apiKey={api_key}'
+    try:
+        # Make the API request
+        response = requests.get(url)
+
+        # Check if the request was successful
+        if response.status_code == 200:
+            data = response.json()
+            # Return the list of future positions
+            return data['positions']
+        else:
+            return f"Error: {response.status_code} - {response.text}"
+
+    except Exception as e:
+        return f"An error occurred: {str(e)}"
