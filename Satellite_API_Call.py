@@ -1,5 +1,7 @@
 import requests
 
+# Retrieve the future positions of any satellite as groundtrack (latitude, longitude) to display orbits on maps, and also the satellite velocity.
+
 def get_satellites_above(id, observer_lat, observer_lng, observer_alt ,seconds, api_key):
     """
         Fetches future positions of a satellite along with azimuth and elevation with respect to the observer.
