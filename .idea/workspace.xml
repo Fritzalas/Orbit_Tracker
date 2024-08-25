@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a15f516-ecab-401e-b93a-a15f9cfb8bb7" name="Changes" comment="Add comment to explain what the function does.">
+    <list default="true" id="9a15f516-ecab-401e-b93a-a15f9cfb8bb7" name="Changes" comment="Made a new API call so with the given coordinates of the observer it displays the list of satellites seen above. Also tested at example.py.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Satellite_API_Call.py" beforeDir="false" afterPath="$PROJECT_DIR$/Satellite_API_Call.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example.py" beforeDir="false" afterPath="$PROJECT_DIR$/example.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +39,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.City_Coordinates.executor": "Run",
     "Python.Main.executor": "Run",
     "Python.Satellite_API_Call.executor": "Run",
     "Python.example.executor": "Run",
@@ -88,7 +88,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724585792411</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Made a new API call so with the given coordinates of the observer it displays the list of satellites seen above. Also tested at example.py.">
+      <option name="closed" value="true" />
+      <created>1724587781235</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724587781236</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,6 +114,7 @@
     <MESSAGE value="Made the first function for get satellites with the needed inputs. Also add the requests package." />
     <MESSAGE value="Established communication with the API. Also made a file to test it." />
     <MESSAGE value="Add comment to explain what the function does." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add comment to explain what the function does." />
+    <MESSAGE value="Made a new API call so with the given coordinates of the observer it displays the list of satellites seen above. Also tested at example.py." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made a new API call so with the given coordinates of the observer it displays the list of satellites seen above. Also tested at example.py." />
   </component>
 </project>

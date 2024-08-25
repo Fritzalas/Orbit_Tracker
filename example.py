@@ -1,5 +1,5 @@
 # Example usage:
-
+from City_Coordinates import get_city_coordinates
 from Satellite_API_Call import get_satellites_info, get_satellites_above
 
 api_key = 'WAZM2J-MJM3EL-MDVLM4-5BQS'
@@ -16,3 +16,4 @@ satellites = get_satellites_above(observer_lat, observer_lng, observer_alt, sear
 
 #print(positions)
 #print(satellites)
+#print(get_city_coordinates("Tirana","Albania"))
