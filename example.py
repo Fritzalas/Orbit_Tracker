@@ -2,6 +2,7 @@
 from City_Coordinates import get_city_coordinates
 from City_Elevation import get_city_elevation
 from Satellite_API_Call import get_satellites_info, get_satellites_above
+from Submit import get_user_input
 
 api_key = 'WAZM2J-MJM3EL-MDVLM4-5BQS'
 id = 25544  # ISS NORAD ID
@@ -16,8 +17,10 @@ positions = get_satellites_info(id, observer_lat, observer_lng, observer_alt, se
 satellites = get_satellites_above(observer_lat, observer_lng, observer_alt, search_radius, category_id, api_key)
 city_coordinates = get_city_coordinates("Athens","USA")
 city_elevation = get_city_elevation("37.9838,23.7275")
+city, country, angle = get_user_input()
 
 #print(positions)
 #print(satellites)
 #print(city_coordinates)
 #print(city_elevation)
+print(f"City: {city}\nCountry: {country}\nAngle: {angle}°")
