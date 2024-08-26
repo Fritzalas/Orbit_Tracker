@@ -1,13 +1,40 @@
 import tkinter as tk
 from tkinter import messagebox
 
-def on_satellite_click(satname):
-    # For now, clicking does nothing, but we can show a message box
-    # to demonstrate that the click event works
-    messagebox.showinfo("Satellite Clicked", f"You clicked on {satname}")
+from Satellite_API_Call import get_satellites_info
+from velocity_calculator import velocity
 
 
-def create_satellite_gui(satellites):
+def on_satellite_click(satellite,observer_lat,observer_lng,observer_alt):
+    # Extract satname and satid
+    satname = satellite['satname']
+    satid = satellite['satid']
+    #Positions of satellite:
+    positions = get_satellites_info(satid, observer_lat, observer_lng, observer_alt, 2, 'WAZM2J-MJM3EL-MDVLM4-5BQS')
+    # Show a message box with the satellite name and id
+    # Extracting and storing values into variables
+    lat1 = positions[0]['satlatitude']
+    lon1 = positions[0]['satlongitude']
+    alt1 = positions[0]['sataltitude']
+
+    lat2 = positions[1]['satlatitude']
+    lon2 = positions[1]['satlongitude']
+    alt2 = positions[1]['sataltitude']
+
+    #Velocity:
+
+    Velocity = velocity(lat1,lon1,alt1,lat2,lon2,alt2) * 3.6
+
+    Velocity = Velocity.real
+
+    # Format the velocity to three decimal places
+    formatted_velocity = f"{Velocity:.3f}"
+
+    # Show the message box
+    messagebox.showinfo("Satellite Clicked", f"You clicked on {satname}, Velocity: {formatted_velocity} km/h")
+
+
+def create_satellite_gui(satellites,lat,lng,alt):
     # Create the main window
     root = tk.Tk()
     root.title("Satellite List")
@@ -35,12 +62,27 @@ def create_satellite_gui(satellites):
     listbox.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
     scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
 
-    # Populate the Listbox with satellite names
+    # Store the satellites in a list (for later retrieval)
+    satellite_data = []
+
+    # Populate the Listbox with satellite names and store the satellite dictionaries
     for satellite in satellites:
         listbox.insert(tk.END, satellite['satname'])
+        satellite_data.append(satellite)
+
+    # Define the click event handler
+    def on_listbox_click(event):
+        # Get the selected index from the Listbox
+        selected_index = listbox.curselection()[0]
+
+        # Retrieve the satellite data from the corresponding index
+        selected_satellite = satellite_data[selected_index]
+
+        # Call the click handler with the satellite data
+        on_satellite_click(selected_satellite,lat,lng,alt)
 
     # Bind the Listbox click event
-    listbox.bind("<Double-1>", lambda event: on_satellite_click(listbox.get(listbox.curselection())))
+    listbox.bind("<Double-1>", on_listbox_click)
 
     # Start the Tkinter event loop
     root.mainloop()

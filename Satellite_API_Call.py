@@ -20,6 +20,7 @@ def get_satellites_info(id, observer_lat, observer_lng, observer_alt ,seconds, a
 
     # Define the API endpoint
     url = f'https://api.n2yo.com/rest/v1/satellite/positions/{id}/{observer_lat}/{observer_lng}/{observer_alt}/{seconds}/&apiKey={api_key}'
+    print(url)
     try:
         # Make the API request
         response = requests.get(url)
@@ -57,7 +58,7 @@ def get_satellites_above(observer_lat, observer_lng, observer_alt,search_radius,
 
     # Define the API endpoint
     url = f'https://api.n2yo.com/rest/v1/satellite/above/{observer_lat}/{observer_lng}/{observer_alt}/{search_radius}/{category_id}/&apiKey={api_key}'
-
+    print(url)
     try:
         # Make the API request
         response = requests.get(url)
