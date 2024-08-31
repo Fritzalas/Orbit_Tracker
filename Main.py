@@ -6,7 +6,7 @@ from display_satellites import create_satellite_gui
 
 #Api private key:
 api_key = 'WAZM2J-MJM3EL-MDVLM4-5BQS'
-category_id = 0  # All categories for 0 else check the manual
+category_id = 0  # All categories for 0 else check the manual at :https://www.n2yo.com/api/
 #Get the user input:
 city, country, angle = get_user_input()
 #City Coordinates:

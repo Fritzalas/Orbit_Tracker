@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a15f516-ecab-401e-b93a-a15f9cfb8bb7" name="Changes" comment="Changed the API for city altitude.">
+    <list default="true" id="9a15f516-ecab-401e-b93a-a15f9cfb8bb7" name="Changes" comment="Made a functionality so when someone chooses a satellite, it displays it's velocity.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Satellite_API_Call.py" beforeDir="false" afterPath="$PROJECT_DIR$/Satellite_API_Call.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_satellites.py" beforeDir="false" afterPath="$PROJECT_DIR$/display_satellites.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example.py" beforeDir="false" afterPath="$PROJECT_DIR$/example.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724602882113</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Made a functionality so when someone chooses a satellite, it displays it's velocity.">
+      <option name="closed" value="true" />
+      <created>1724679191277</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1724679191277</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,6 +185,7 @@
     <MESSAGE value="Made a submission window more abstract, so it  can be used in the main method." />
     <MESSAGE value="Deserialization of the JSON file from the satellites API." />
     <MESSAGE value="Changed the API for city altitude." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed the API for city altitude." />
+    <MESSAGE value="Made a functionality so when someone chooses a satellite, it displays it's velocity." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made a functionality so when someone chooses a satellite, it displays it's velocity." />
   </component>
 </project>
