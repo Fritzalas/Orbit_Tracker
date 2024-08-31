@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a15f516-ecab-401e-b93a-a15f9cfb8bb7" name="Changes" comment="Made a functionality so when someone chooses a satellite, it displays it's velocity.">
+    <list default="true" id="9a15f516-ecab-401e-b93a-a15f9cfb8bb7" name="Changes" comment="Added manual for satellite category.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724679191277</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added manual for satellite category.">
+      <option name="closed" value="true" />
+      <created>1725118202267</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1725118202267</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,6 +194,7 @@
     <MESSAGE value="Deserialization of the JSON file from the satellites API." />
     <MESSAGE value="Changed the API for city altitude." />
     <MESSAGE value="Made a functionality so when someone chooses a satellite, it displays it's velocity." />
-    <option name="LAST_COMMIT_MESSAGE" value="Made a functionality so when someone chooses a satellite, it displays it's velocity." />
+    <MESSAGE value="Added manual for satellite category." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added manual for satellite category." />
   </component>
 </project>

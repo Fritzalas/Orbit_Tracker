@@ -19,7 +19,7 @@ satellites = get_satellites_above(observer_lat, observer_lng, observer_alt, sear
 city_coordinates = get_city_coordinates("Athens","USA")
 city_elevation = get_city_elevation(37.9838,23.7275)
 city, country, angle = get_user_input()
-create_satellite_gui(satellites)
+create_satellite_gui(satellites,observer_lat,observer_lng,observer_lat)
 
 #print(positions)
 #print(satellites)
