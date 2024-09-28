@@ -17,5 +17,3 @@ def get_city_coordinates(city_name, country_name):
         return "Geocoding quota exceeded"
     except Exception as e:
         return f"An error occurred: {e}"
-
-    print("Hello Paulina")
