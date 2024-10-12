@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 
 from Satellite_API_Call import get_satellites_info
-from velocity_calculator import velocity
+from velocity_calculator import velocity, haversine
 
 
 def on_satellite_click(satellite,observer_lat,observer_lng,observer_alt):
@@ -22,9 +22,10 @@ def on_satellite_click(satellite,observer_lat,observer_lng,observer_alt):
     alt2 = positions[1]['sataltitude']
 
     #Velocity:
+    Converter = 3.6 #Converts the velocity to km/h
 
-    Velocity = velocity(lat1,lon1,alt1,lat2,lon2,alt2) * 3.6
-
+    #Velocity = velocity(lat1,lon1,alt1,lat2,lon2,alt2) * Converter
+    Velocity = haversine(lat1,lon1,alt1,lat2,lon2,alt2) * Converter
     Velocity = Velocity.real
 
     # Format the velocity to three decimal places

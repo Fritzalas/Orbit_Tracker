@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a15f516-ecab-401e-b93a-a15f9cfb8bb7" name="Changes" comment="Just added hello paulina for testing.">
+    <list default="true" id="9a15f516-ecab-401e-b93a-a15f9cfb8bb7" name="Changes" comment="Added to display also the position of the satellite.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/City_Coordinates.py" beforeDir="false" afterPath="$PROJECT_DIR$/City_Coordinates.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/display_satellites.py" beforeDir="false" afterPath="$PROJECT_DIR$/display_satellites.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/velocity_calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/velocity_calculator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +41,9 @@
     &quot;accountId&quot;: &quot;2e8ca242-578a-441f-9a49-6878ce7a2c7d&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -191,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727515495952</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added to display also the position of the satellite.">
+      <option name="closed" value="true" />
+      <created>1728727728376</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1728727728376</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,6 +230,18 @@
     <MESSAGE value="Made a functionality so when someone chooses a satellite, it displays it's velocity." />
     <MESSAGE value="Added manual for satellite category." />
     <MESSAGE value="Just added hello paulina for testing." />
-    <option name="LAST_COMMIT_MESSAGE" value="Just added hello paulina for testing." />
+    <MESSAGE value="Added to display also the position of the satellite." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added to display also the position of the satellite." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/velocity_calculator.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
