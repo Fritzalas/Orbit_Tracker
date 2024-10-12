@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a15f516-ecab-401e-b93a-a15f9cfb8bb7" name="Changes" comment="Added to display also the position of the satellite.">
+    <list default="true" id="9a15f516-ecab-401e-b93a-a15f9cfb8bb7" name="Changes" comment="Used haversine formula for more effective calculation of the orbit velocity.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_satellites.py" beforeDir="false" afterPath="$PROJECT_DIR$/display_satellites.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/velocity_calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/velocity_calculator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728727728376</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Used haversine formula for more effective calculation of the orbit velocity.">
+      <option name="closed" value="true" />
+      <created>1728730578143</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1728730578143</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,7 +237,8 @@
     <MESSAGE value="Added manual for satellite category." />
     <MESSAGE value="Just added hello paulina for testing." />
     <MESSAGE value="Added to display also the position of the satellite." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added to display also the position of the satellite." />
+    <MESSAGE value="Used haversine formula for more effective calculation of the orbit velocity." />
+    <option name="LAST_COMMIT_MESSAGE" value="Used haversine formula for more effective calculation of the orbit velocity." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
