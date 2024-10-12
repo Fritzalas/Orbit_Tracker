@@ -31,7 +31,8 @@ def on_satellite_click(satellite,observer_lat,observer_lng,observer_alt):
     formatted_velocity = f"{Velocity:.3f}"
 
     # Show the message box
-    messagebox.showinfo("Satellite Clicked", f"You clicked on {satname}, Velocity: {formatted_velocity} km/h")
+    messagebox.showinfo("Satellite Clicked", f"You clicked on {satname}, Velocity: {formatted_velocity} km/h, Latitude: {lat2} °, "
+                                             f"Longitude: {lon2} °, Altitude: {alt2} km")
 
 
 def create_satellite_gui(satellites,lat,lng,alt):

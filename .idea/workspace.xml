@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a15f516-ecab-401e-b93a-a15f9cfb8bb7" name="Changes" comment="Added manual for satellite category.">
+    <list default="true" id="9a15f516-ecab-401e-b93a-a15f9cfb8bb7" name="Changes" comment="Just added hello paulina for testing.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/City_Coordinates.py" beforeDir="false" afterPath="$PROJECT_DIR$/City_Coordinates.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_satellites.py" beforeDir="false" afterPath="$PROJECT_DIR$/display_satellites.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Paulina" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -168,7 +175,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725118202267</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Just added hello paulina for testing.">
+      <option name="closed" value="true" />
+      <created>1727515184784</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1727515184784</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Just added hello paulina for testing.">
+      <option name="closed" value="true" />
+      <created>1727515495952</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1727515495952</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,6 +218,7 @@
     <MESSAGE value="Changed the API for city altitude." />
     <MESSAGE value="Made a functionality so when someone chooses a satellite, it displays it's velocity." />
     <MESSAGE value="Added manual for satellite category." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added manual for satellite category." />
+    <MESSAGE value="Just added hello paulina for testing." />
+    <option name="LAST_COMMIT_MESSAGE" value="Just added hello paulina for testing." />
   </component>
 </project>
