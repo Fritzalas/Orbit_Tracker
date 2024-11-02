@@ -2,13 +2,16 @@ import time
 
 from City_Coordinates import get_city_coordinates
 from City_Elevation import get_city_elevation
-from Satellite_API_Call import get_satellites_above
+from Satellite_API_Call import get_satellites_above, get_satellites_info
+from SharedPreferences import get_preference
 from Submit import get_user_input
 from display_satellites import create_satellite_gui, get_satellite_data
 import json
 import http.server
 import threading
 import socketserver
+
+from velocity_calculator import haversine
 
 #Api private key:
 api_key = 'WAZM2J-MJM3EL-MDVLM4-5BQS'
@@ -28,10 +31,36 @@ create_satellite_gui(satellites,city_coordinates[0],city_coordinates[1],city_ele
 def update_satellite_data():
     global satellite_data
     while True:
-        # Get the latest satellite data from DataProvider.py
-        satellite_data = get_satellite_data()
+        positions = get_satellites_info(
+            get_preference("satid"),
+            get_preference("observer_lat"),
+            get_preference("observer_lng"),
+            get_preference("observer_alt"),
+            2, 'WAZM2J-MJM3EL-MDVLM4-5BQS')
+        lat1 = positions[0]['satlatitude']
+        lon1 = positions[0]['satlongitude']
+        alt1 = positions[0]['sataltitude']
+        lat2 = positions[1]['satlatitude']
+        lon2 = positions[1]['satlongitude']
+        alt2 = positions[1]['sataltitude']
+        # Velocity:
+        Converter = 3.6  # Converts the velocity to km/h
+
+        # Velocity = velocity(lat1,lon1,alt1,lat2,lon2,alt2) * Converter
+        Velocity = haversine(lat1, lon1, alt1, lat2, lon2, alt2) * Converter
+        Velocity = Velocity.real
+
+        # Format the velocity to three decimal places
+        formatted_velocity = f"{Velocity:.3f}"
+        satellite_data = {
+            "satname": get_preference("satname"),
+            "velocity": f"{formatted_velocity} km/h",
+            "latitude": f"{lat2} °",
+            "longitude": f"{lon2} °",
+            "altitude": f"{alt2} km"
+        }
         print("Updated satellite data:", satellite_data)
-        time.sleep(5)
+        time.sleep(10)
 
 
 class JSONHandler(http.server.SimpleHTTPRequestHandler):

@@ -3,6 +3,7 @@ import tkinter as tk
 from tkinter import messagebox
 
 from Satellite_API_Call import get_satellites_info
+from SharedPreferences import set_preference
 from velocity_calculator import velocity, haversine
 
 
@@ -13,6 +14,11 @@ def on_satellite_click(satellite,observer_lat,observer_lng,observer_alt):
     satid = satellite['satid']
     #Positions of satellite:
     positions = get_satellites_info(satid, observer_lat, observer_lng, observer_alt, 2, 'WAZM2J-MJM3EL-MDVLM4-5BQS')
+    set_preference("satid",satid)
+    set_preference("observer_lat",observer_lat)
+    set_preference("observer_lng",observer_lng)
+    set_preference("observer_alt",observer_alt)
+    set_preference("satname",satname)
     # Show a message box with the satellite name and id
     # Extracting and storing values into variables
     lat1 = positions[0]['satlatitude']

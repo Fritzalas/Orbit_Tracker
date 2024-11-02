@@ -1,0 +1,5 @@
+'satid', (0, 15)
+'observer_lat', (512, 21)
+'observer_lng', (1024, 21)
+'observer_alt', (1536, 21)
+'satname', (2048, 21)
