@@ -1,3 +1,4 @@
+import json
 import tkinter as tk
 from tkinter import messagebox
 
@@ -6,6 +7,7 @@ from velocity_calculator import velocity, haversine
 
 
 def on_satellite_click(satellite,observer_lat,observer_lng,observer_alt):
+    global satellite_data
     # Extract satname and satid
     satname = satellite['satname']
     satid = satellite['satid']
@@ -31,10 +33,23 @@ def on_satellite_click(satellite,observer_lat,observer_lng,observer_alt):
     # Format the velocity to three decimal places
     formatted_velocity = f"{Velocity:.3f}"
 
+    # Store data in global variable for the Flask server
+    satellite_data = {
+        "satname": satname,
+        "velocity": f"{formatted_velocity} km/h",
+        "latitude": f"{lat2} °",
+        "longitude": f"{lon2} °",
+        "altitude": f"{alt2} km"
+    }
+    with open("satellite_data.json", "w") as f:
+        json.dump(satellite_data, f)
+
     # Show the message box
     messagebox.showinfo("Satellite Clicked", f"You clicked on {satname}, Velocity: {formatted_velocity} km/h, Latitude: {lat2} °, "
                                              f"Longitude: {lon2} °, Altitude: {alt2} km")
 
+def get_satellite_data():
+    return satellite_data
 
 def create_satellite_gui(satellites,lat,lng,alt):
     # Create the main window
